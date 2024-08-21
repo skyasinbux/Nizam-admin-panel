@@ -1,0 +1,200 @@
+.list-table-format{
+    display: grid;
+
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 13px;
+}
+
+.list-table-format img{
+    width: 50px;
+}
+@media(max-width:600px){
+
+    .list-table-format{
+        grid-template-columns: 1fr 3fr 1fr;
+        gap: 15px;
+    }
+    .list-table-format.title{
+        display: none;
+    }
+}
+
+/* remove_btn */
+
+.remove_btn {
+    width: 90px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: #e62222;
+   }
+   
+   .remove_btn, .remove_btn span {
+    transition: 200ms;
+   }
+   
+   .remove_btn .text {
+    transform: translateX(10px);
+    color: white;
+    font-weight: bold;
+   }
+   
+   .remove_btn .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(60px);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   .remove_btn svg {
+    width: 13px;
+    fill: #eee;
+   }
+   
+   .remove_btn:hover {
+    background: #ff3636;
+   }
+   
+   .remove_btn:hover .text {
+    color: transparent;
+   }
+   
+   .remove_btn:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(-28px);
+   }
+   
+   .remove_btn:focus {
+    outline: none;
+   }
+   
+   .remove_btn:active .icon svg {
+    transform: scale(0.8);
+   }
+
+   /* show and hide item */
+   /* The switch - the box around the slider */
+.switch {
+    font-size: 10px;
+    position: relative;
+    display: inline-block;
+    width: 5em;
+    height: 2em;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    transition: 0.4s;
+    border-radius: 5px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 5px;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: white;
+    transition: 0.4s;
+  }
+  
+  .switch input:checked + .slider {
+    background-color: green;
+  }
+  
+  .switch input:checked + .slider:before {
+    transform: translateX(3em);
+  }
+  .bold_item{
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+  .Edit_item{
+    background: rgb(242, 157, 0);
+    color: azure;
+    padding: 3px 40px 3px 12px;
+    border-radius: 3px;
+    width: 30px;
+  }
+  .Edit_item:hover{
+    background: rgb(224, 146, 2);
+
+  }
+
+  /* search bar */
+  /* From Uiverse.io by vikramsinghnegi */ 
+.styled-input {
+  position: relative;
+  cursor: text;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 16px;
+  height: 48px;
+  background-color: #fff;
+  border: 1px solid #d6d6e7;
+  border-radius: 3px;
+  color: rgb(35, 38, 59);
+  box-shadow: inset 0 1px 4px 0 rgb(119 122 175 / 30%);
+  overflow: hidden;
+  transition: all 100ms ease-in-out;
+}
+
+.styled-input:focus {
+  border-color: #3c4fe0;
+  box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
+}
+
+/* pagination */
+.pagination{
+  background: transparent;
+  padding: 5px 0px;
+  padding-bottom: 20px;
+  display: flex;
+  gap: 10px;
+
+}
+.pagination button{
+  padding: 8px 10px;
+  background-color: #00a1a7;
+  border: .5px solid rgb(59, 58, 58);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.pagination button:hover{
+  background-color: #1a94e5;
+}
+
+.list-head{
+  padding-bottom: 10px;
+    color: rebeccapurple;
+   }
+
